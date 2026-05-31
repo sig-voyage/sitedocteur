@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+/* Header bleu ciel */
+header {
+    background-color: #87ceeb;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Carte (boîte blanche) */
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+/* Titres */
+h1, h2 {
+    color: #00aaff;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton */
+button {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008ecc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #87ceeb;
+    color: white;
+    margin-top: 20px;
+}
