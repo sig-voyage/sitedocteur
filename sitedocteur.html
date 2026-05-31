@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cabinet Dr Mars Sig</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f0f8ff;
+        }
+
+        header {
+            background: #87ceeb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #00aaff;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #00aaff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #008ecc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #87ceeb;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cabinet Médical Dr Mars Sig</h1>
+    <p>Bienvenue chez votre médecin</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>À propos</h2>
+        <p>Le docteur vous accueille pour vos consultations générales et suivis médicaux.</p>
+    </div>
+
+    <div class="card">
+        <h2>Prendre un rendez-vous</h2>
+
+        <input type="text" id="name" placeholder="Votre nom">
+        <input type="date" id="date">
+        <input type="time" id="time">
+
+        <button onclick="reserver()">Réserver</button>
+
+        <p id="message"></p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Cabinet Médical
+</footer>
+
+<script>
+    function reserver() {
+        let name = document.getElementById("name").value;
+        let date = document.getElementById("date").value;
+        let time = document.getElementById("time").value;
+
+        if (name === "" || date === "" || time === "") {
+            document.getElementById("message").innerHTML =
+                "❌ Veuillez remplir tous les champs";
+        } else {
+            document.getElementById("message").innerHTML =
+                "✅ Rendez-vous réservé pour " + name + " le " + date + " à " + time;
+        }
+    }
+</script>
+
+</body>
+</html>
+
